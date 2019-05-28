@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Work Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<h1 id="colorlib-logo"><a href="index.html"><span>Ryan</span><span>Pee</span></a></h1>
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul>
+					<li class="colorlib-active"><a href="work.html">Work</a></li>
+					<li><a href="stuff.html">Other Stuff</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="colorlib-footer">
+				<p><small><small><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </span> </small></small></p>
+				<ul>
+					<li><a href="#"><i class="icon-facebook2"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+				</ul>
+			</div>
+
+		</aside>
+
+		<div id="colorlib-main">
+
+			<div class="colorlib-work">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3">
+							<span class="heading-meta"></span>
+							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft"></h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-8 image-content">
+							<img class="img-responsive" src="images/made-cover.jpg" alt="">
+						</div>
+						<div class="col-md-4 "> <!-- was col-md-4 -->
+								<div class="project-desc">
+									<h2>Design of 3D-printed steel</h2>
+									<h4>Overview</h4>
+									<p>
+										For a class project, my team designed a 3D-printed steel using thermodynamic modeling software.
+										I modeled the toughness of the steel, while my other teammates worked on the strength and thermal profile of the steel.
+										I applied my thermodynamic knowledge and learnt a bit of how to use Python for data science.
+									</p>
+									<h4>Goal</h4>
+									<p>
+										3D-printing of metals is an emerging field with the promise of using less material and fewer equipment compared to traditional manufacturing.
+										There are many barriers to widespread adoption of 3D-printed metals however, as 3D-printing inherently creates pores in the metal that weaken the metal.
+										The goal of the project for my class was to design a steel that would have the same strength and toughness as a traditionally-manufactured steel.
+									</p>
+									<h4>Design</h4>
+									<p>
+										My team researched the processing techniques of metals.
+										The processing controls the structure of the metal and hence its properties.
+										By designing the steps in the processing of the steel, we could determine the final properties of the steel.
+										We decided to put the steel through additional heat treatment steps after the initial 3D-printing step.
+										Generally, under specific conditions, the first heat treatment step can form the major component of the material known as austenite.
+										The austenite can transform to martensite given the right conditions, which increases its toughness.
+										The second heat treatment step can, under specific conditions as well, form precipitates that increase the strength of the steel.
+										We then created a flowchart to visualize the relationship between the processing to the structure and to the properties of the steel.
+									</p>
+										<div class="col-md-8 image-content">
+											<img class="img-responsive" src="images/made-designchart.png" alt="">
+										</div>
+										<h4>Modeling</h4>
+										<p>
+										I took responsibility for the toughness portion of the steel.
+										I used the thermodynamic modeling software MaDe to calculate the stability of the austenite phase at different temperatures and
+										I used Python to calculate the yield stress of the austenite phase at different temperatures by applying a thermodynamic equation.
+										I plotted the two variables on a graph and predicted the temperature at which the highest toughening would occur.
+										My team used the model to iterate different parameters until the temperature came within the operating temperature of the steel, which is assumed to be at room temperature.
+										I used Python to consolidate my steps.
+										</p>
+										<h4>Result</h4>
+										Based on the thermodynamic models, we were able to design a 3D-printed steel that met our criteria.
+										It had a strength of more than 896KPa and toughness of more than 10KJ/m<sup>2</sup>.
+										One of my main takeaways from this project is a deeper understanding of materials properties and metallurgy in general.
+										I also learnt how to use thermodynamic modeling software and a bit of Python.
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Sticky Kit -->
+	<script src="js/sticky-kit.min.js"></script>
+
+
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
