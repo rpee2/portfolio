@@ -249,6 +249,7 @@ figure {
     position: fixed;
     top: 35%; /* ??? */
     left: 35%;
+    opacity: 0.75; 
     /* bring your own prefixes */
     overflow: auto; /*changed*/
     z-index: 1001;
