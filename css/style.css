@@ -249,7 +249,7 @@ figure {
     position: fixed;
     top: 35%; /* ??? */
     left: 35%;
-    opacity: 0.75 ; 
+    opacity: 0.75 ;
     /* bring your own prefixes */
     overflow: auto; /*changed*/
     z-index: 1001;
@@ -915,7 +915,7 @@ border: 1px solid #000; /* changed */ }
   .colorlib-feature.colorlib-feature-sm .colorlib-text {
     margin-top: 30px; }
   .colorlib-feature.colorlib-feature-sm .colorlib-icon i {
-    color: #F75940;
+    color: #FFF;
     font-size: 40px; }
     @media screen and (max-width: 1200px) {
       .colorlib-feature.colorlib-feature-sm .colorlib-icon i {
