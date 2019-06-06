@@ -192,9 +192,7 @@ figure {
         background-color: #F2F2F2;
         color: #161616; }
         #colorlib-aside #colorlib-main-menu ul li.colorlib-active a:after {
-          visibility: visible;
-
-          /*
+          /* visibility: visible;
           -webkit-transform: scaleX(1);
           -moz-transform: scaleX(1);
           -ms-transform: scaleX(1);
