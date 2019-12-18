@@ -691,6 +691,7 @@ border: 1px solid #000; /* changed */ }
       margin-top: 2em; } }
 
 .project {
+  cursor: pointer; /*I added this */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
