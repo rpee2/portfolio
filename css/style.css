@@ -1234,7 +1234,7 @@ border: 1px solid #000; /* changed */ }
   padding: 10px !important; }
 
 .js .animate-box {
-  opacity: 0; }
+  opacity: 0.1; }
 
 #sticky_item {
   overflow: hidden;
