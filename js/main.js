@@ -71,7 +71,7 @@
 
 			}
 
-		} , { offset: '85%' } );
+		} , { offset: '100%' } ); // changed it from 85 to 100
 	};
 
 
