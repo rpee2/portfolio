@@ -72,7 +72,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		</aside>
 
 		<div id="colorlib-main">
-
 			<div class="colorlib-work">
 				<div class="container-fluid">
 					<div class="row">
@@ -83,22 +82,67 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 						<div class="col-md-4 ">
 								<div class="project-desc">
-									<h2 class="animate-box" data-animate-effect="fadeInLeft"><big>Lockable Folding Seat for Public Transportation</big></h2>
+									<h2 class="animate-box" data-animate-effect="fadeInLeft"><big>Lockable Folding Seat System for Public Transportation</big></h2>
 									<span>Role: Research</span>
-									<h4>Problem</h4>
+									<h4>Overview</h4>
 									<p>
-										*** Project writeup not done yet ***
+											For an engineering design class, my team applied design methodologies and tools to work towards a solution for a practical engineering problem. At the end of the class, we created a functional prototype based on the solution.
+										<br>
+											The problem we wanted to address was the difficult commune for people with disabilities. We built an electronic locking system and integrated it into a folding seat. If a suitable Bluetooth tag is in range of the sensor attached on the chair, the electromagnetic lock holding the chair together will release and the chair can be folded down.
 									</p>
-
-
+								<h4>Problem Identification</h4>
+								<p>
+										We wanted to explore problems we faced in our daily lives as a springboard. We started brainstorming sessions where individuals pitched in as many ideas as they could. One of the recurring themes in our group discussions was public transport. We identified a common complaint as the crowd in Singapore’s mass rapid transit (MRT) during daily peak hours. The problem is that passengers are often left waiting for the next train despite the current train not at full capacity.
+								</p>
+								<h4>Development</h4>
+								<p>
+										We conducted an online survey where the target audience were commuters who take public transport regularly. We asked them for perspectives and feedback regarding public transport in Singapore. Half of the respondents felt that tackling this problem was important.
+									<br>
+										We started brainstorming for solutions and identified two practical solutions to address this problem. The first one is a system consisting of sensors to collect information on the number of people in each carriage of the train and software to convert the information into data for passengers about the load in each carriage. This will better inform passengers on where to stand along the platform to ensure that they can fit into the upcoming train. The second one addresses the problem indirectly by using lockable folding seats in trains to fit more passengers. The seats are programmed to fold and lock during peak hours to create more standing room.
+									<br>
+										We wanted to pursue the first solution about data from sensors because it had a higher potential to reduce the peak hour crowd. It also targeted the problem of suboptimal distribution of passengers directly. However, we were stopped short when an interview with an operations manager notified us that current trains already had the capabilities to measure loads, and thus occupancy in the individual carriages - these capabilities were not implemented yet. Furthermore, we realized that our design was not adding value beyond simply using a commercially available people counting product. We decided to drop the idea when we failed to find a suitable pivot.
+								</p>
+								<h4>Pivot</h4>
+								<p>
+									We came across a Busan initiative where pregnant women could use a Bluetooth tag to activate a pink light in the train, alerting other passengers to give up their seat in the presence of the pregnant woman. We thought that we could apply this idea to the reserved seating system on MRT trains in Singapore. Reserved seats were designed to encourage the general public to give up seats to people with restricted mobility (PRM). However, it can still be difficult to find seats. In fact, it is recognized that people sometimes do not give up the reserved seat to people in need. One of the biggest reasons why is the culture in Singapore where people normally keep to themselves. This puts up barriers among strangers and creates potential for miscommunication. To eliminate the ambiguity of these situations, we decided to adapt the lockable folding seats idea to supplement reserved seats: by using folding seats that only unlock with a chip given to PRM, we can circumvent the communication barrier and increase the chance that they will have a seat for the ride.
+								</p>
+								<h4>Prototype Building</h4>
+								<p>
+									We started with the seat’s design concept to conceptualize the process and the main functions which go into achieving the intended purpose of the seat.
+								</p>
+									<div class="col-md-8 image-content">
+										<img class="img-responsive" src="images/chair-process.png" alt="">
+									</div>
+									<div class="col-md-8 image-content">
+										<img class="img-responsive" src="images/chair-concept.png" alt="">
+									</div>
+								<p>
+									<br>
+									From there, we used a morphological chart to generate and explore ideas for each of the seat’s function. One of the key decisions was the choice of the sensor technology. There were a few options, but we narrowed it down to RFID and BLE. The fare payment card is already RFID-based so choosing RFID for the sensor would make it more convenient by allowing the fare payment card to be used as a tag simultaneously. However, the short range of RFID might make it more troublesome. The user would have to place their tag on the sensor directly to unlock the seat. Choosing BLE instead makes it more accessible due to its larger range. The seat will unlock when the tag is near the seat. The ability to unlock without direct contact was considered to be the key factor because of it minimizes the time taken to sit before the train begins moving. Hence, we chose BLE.
+								</p>
+									<div class="col-md-8 image-content">
+										<img class="img-responsive" src="images/chair-chart.png" alt="">
+									</div>
+								<p>
+									<br>
+									To show the proof of concept, we built a prototype. I helped to design the circuit. Once the circuitry was working correctly, I soldered the circuit on a blank circuit board. I then attached the circuit on the seat. Attaching the circuit was the hardest part because we had to work with the dimensions of the seat. The two parts of the magnetic lock had to be placed as close as possible for it to work effectively. We made it work after shifting the lock placement.
+									<div class="col-md-8 image-content">
+										<img class="img-responsive" src="images/chair-schematic.png" alt="">
+									</div>
+								</p>
+								<h4>Future Considerations</h4>
+								<p>
+									The next step is to figure out how to implement the seat into the existing MRT infrastructure. Practical issues such as how to mount the seat on a train carriage and where to supply power to the sensor will have to be addressed.
+								</p>
+								<h4>Learning Points</h4>
+								<p>
+									I learnt how to apply design principles to help better inform the decisions into making a product. I also learnt simple circuit design and a little bit of Arduino to create a working sensor. It was a fun project and it has given me insight into design thinking.
+								</p>
 
 						</div>
 					</div>
-
-
 				</div>
 			</div>
-
 		</div>
 	</div>
 
