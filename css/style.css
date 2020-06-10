@@ -1194,7 +1194,7 @@ border: 1px solid #000; /* changed */ }
   -ms-transform: rotateZ(45deg);
   -o-transform: rotateZ(45deg);
   transform: rotateZ(45deg);
-  background-color: #F75940;
+  background-color: #DC143C;
     }
 
 .colorlib-nav-toggle.active i::after {
@@ -1204,7 +1204,7 @@ border: 1px solid #000; /* changed */ }
   -ms-transform: rotateZ(-45deg);
   -o-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg);
-  background-color: #F75940;
+  background-color: #DC143C;
 /*background-color: #FFF; i added this code and it worked for the black layout, but now it doesn't work for the white and black*/ }
 
 .colorlib-nav-toggle {
