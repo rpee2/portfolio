@@ -18,7 +18,7 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  color: #FFF;
+  /*color: #FFF; change color of icons*/
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
@@ -545,7 +545,7 @@
   content: "\e9de";
 }
 .icon-globe-outline:before {
-  content: "\e9df";
+  content: "\e9df ";
 }
 .icon-eye-outline:before {
   content: "\e9e0";

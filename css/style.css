@@ -14,13 +14,18 @@
 body {
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.8;
-  color: #FFF;
-  background-color: #1e1e1e; } /*originally 111111*/
-  @media screen and (max-width: 992px) {
+  color: #000;
+  margin: 0 0 0 2%;
+  background-color: #FFFFFF; } /*originally 111111*/
+  @media screen and (max-width: 1200px) { /*added this 6/10/2020*/
     body {
-      font-size: 16px; } }
+      margin: 0 0 0 8%; } }
+  @media screen and (max-width: 768px) { /*changed this 6/10/2020*/
+    body {
+      font-size: 16px;
+      margin: 0 0 0 0; } }
 
 /*this is for the colorlib ad*/
 a {
@@ -29,21 +34,28 @@ a {
   -o-transition: 0.5s;
   transition: 0.5s; }
   a:hover, a:active, a:focus {
-    background-color: #F2F2F2; /*changed*/
+    color: #000; /*added*/
+    background: #FFF;
     outline: none;
     text-decoration: none !important; }
 
 p {
   margin-bottom: 1.5em; }
 
-h1, h2, h3, h5, h6 {
+h1, h2, h5, h6 {
+  color: #000; /*changed*/
+  font-family: "Quicksand", Arial, sans-serif;
+  font-weight: 400;
+  margin: 0 0 30px 0; }
+
+h3 {
   color: #F2F2F2; /*changed*/
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 30px 0; }
 
 h4 {
-  color: #F2F2F2; /*changed*/
+  color: #000; /*changed*/
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 5px 0; }
@@ -93,14 +105,14 @@ figure {
   left: 0;
   overflow: hidden; /*changed*/
   z-index: 1001;
-  background: #000;
+  background: #1e1e1e; /*was just black but it was too dark*/
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
   @media screen and (max-width: 1200px) {
     #colorlib-aside {
       overflow: hidden;
-      width: 15%; } } /*changed*/
+      width: 20%; } } /*changed*/
   @media screen and (max-width: 768px) {
     #colorlib-aside {
       overflow: hidden;
@@ -207,7 +219,7 @@ figure {
     text-align: right; /* changed */
     font-weight: 400;
     color: #dddddd; /* changed */
-    padding: 0 20px; }
+    padding: 20px; }
     @media screen and (max-width: 1200px) {
       #colorlib-aside .colorlib-footer {
         position: absolute;
@@ -231,12 +243,13 @@ figure {
         display: inline;
         list-style: none; }
         #colorlib-aside .colorlib-footer ul li a {
-          color: rgba(0, 0, 0, 0.7);
+          color: #dddddd;
           padding: 4px; }
           #colorlib-aside .colorlib-footer ul li a:hover, #colorlib-aside .colorlib-footer ul li a:active, #colorlib-aside .colorlib-footer ul li a:focus {
             text-decoration: none;
             outline: none;
-            color: #F75940; }
+            color: #1e1e1e;
+            background: #FFF; } /*i added this - if not the logo background is white by default when highlighted*/
 
 #colorlib-landing {
     padding-top: 5em;
@@ -296,6 +309,7 @@ figure {
             padding: 0; }
 
             #colorlib-landing #colorlib-main-menu ul li {
+              color: #fff;
               margin: 0 0 10px 0;
               padding: 0;
               list-style: none;
@@ -304,7 +318,7 @@ figure {
               text-transform: uppercase;
               letter-spacing: 1px; }
               #colorlib-landing #colorlib-main-menu ul li a {
-                color: #dddddd;
+                color: #fff;
                 text-decoration: none;
                 position: relative;
                 padding: 5px 0; /* changed */
@@ -549,7 +563,7 @@ body.offcanvas {
   display: block;
   font-size: 10px;
   text-transform: uppercase;
-  color: #F2F2F2;
+  color: #404040;
   font-weight: 500;
   letter-spacing: 5px; }
 
@@ -884,7 +898,7 @@ border: 1px solid #000; /* changed */ }
     height: 100px;
     display: table;
     text-align: center;
-    background: rgba(0, 0, 0, 0.03);
+    background: #FFF; /*the background of the icons in 'contact' page*/
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
@@ -914,7 +928,7 @@ border: 1px solid #000; /* changed */ }
   .colorlib-feature.colorlib-feature-sm .colorlib-text {
     margin-top: 30px; }
   .colorlib-feature.colorlib-feature-sm .colorlib-icon i {
-    color: #FFF;
+    color: #332424; /*this controls the color of the icons in the 'contact' page*/
     font-size: 40px; }
     @media screen and (max-width: 1200px) {
       .colorlib-feature.colorlib-feature-sm .colorlib-icon i {
@@ -1180,7 +1194,7 @@ border: 1px solid #000; /* changed */ }
   -ms-transform: rotateZ(45deg);
   -o-transform: rotateZ(45deg);
   transform: rotateZ(45deg);
-  background-color: #FFF; }
+    }
 
 .colorlib-nav-toggle.active i::after {
   bottom: 0;
