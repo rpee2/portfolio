@@ -1128,7 +1128,7 @@ border: 1px solid #000; /* changed */ }
   .colorlib-nav-toggle.active i::before, .colorlib-nav-toggle.active i::after {
     background: #000; }
   .colorlib-nav-toggle.dark.active i::before, .colorlib-nav-toggle.dark.active i::after {
-    background: #FFF; }
+    background: #000; }
   .colorlib-nav-toggle:hover, .colorlib-nav-toggle:focus, .colorlib-nav-toggle:active {
     background: transparent; /* added this */
     outline: none;
@@ -1145,7 +1145,7 @@ border: 1px solid #000; /* changed */ }
     font: bold 14px/.4 Helvetica;
     text-transform: uppercase;
     text-indent: -55px;
-    background: #FFF;
+    background: #000;
     -webkit-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
     transition: all .2s ease-out; }
@@ -1153,7 +1153,7 @@ border: 1px solid #000; /* changed */ }
       content: '';
       width: 30px;
       height: 2px;
-      background: #FFF;
+      background: #000;
       position: absolute;
       left: 0;
       -webkit-transition: 0.2s;
@@ -1167,7 +1167,7 @@ border: 1px solid #000; /* changed */ }
     -o-transition: all .2s ease-out;
     transition: all .2s ease-out; }
     .colorlib-nav-toggle.dark i::before, .colorlib-nav-toggle.dark i::after {
-      background: #FFF;
+      background: #000;
       -webkit-transition: 0.2s;
       -o-transition: 0.2s;
       transition: 0.2s; }
@@ -1203,7 +1203,7 @@ border: 1px solid #000; /* changed */ }
   -ms-transform: rotateZ(-45deg);
   -o-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg);
-  background-color: #FFF; }
+/*background-color: #FFF; i added this code and it worked for the black layout, but now it doesn't work for the white and black layout*/ }
 
 .colorlib-nav-toggle {
   position: fixed;
