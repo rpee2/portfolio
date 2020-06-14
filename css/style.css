@@ -58,7 +58,8 @@ h4 {
   color: #000; /*changed*/
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
-  margin: 0 0 5px 0; }
+  margin: 0 0 5px 0;
+  text-decoration: underline; }
 
 figure {
   margin-bottom: 2.5em;
